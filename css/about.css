@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+
+.big {
+    height: 100vh;
+
+}
+
+.bg-img{
+    height: 50vh;
+    min-height: 300px;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.7);
+}
+.navbar a {
+    font-size: 20px;
+    font-family: poppins;
+
+}
+
+.jumbotron{
+    background-image: url("../img/image14.jpg");
+    background-size: cover;
+    background-position: center ;
+    border-radius: 0 !important;
+}
+.jumbotron1{
+    background-image: url("../img/edi.jpeg");
+    background-size: cover;
+    background-position: center ;
+    min-height: 400px;
+}
+
+.img-resize {
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    margin: auto;
+}
+
+.img-blocks {
+    height: 500px;
+    width: 750px;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    margin: auto;
+}
+
+.col-6 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.col-4 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.col-3 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.btn {
+    background-color: #7a4b30;
+    border: 0px;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    font-family: poppins;
+  }
+
+  p {
+    font-family: poppins;
+  }
+
+.checked {
+    color: orange;
+}
+
+
+.span {
+    display: inline-flex;
+}
+    

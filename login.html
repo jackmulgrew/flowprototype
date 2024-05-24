@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script src="https://kit.fontawesome.com/9d6229a307.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/login.css">
+
+    <title>FLOW Web Store</title>
+  </head>
+
+  <body>
+
+    <div class="jumbotron p-5 mb-4 bg-light rounded-3">
+      <nav 
+class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Candles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+            <a class="nav-link active" href="registerLogin.html">Register/Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    </div> 
+
+<!--Login form-->
+<section style="background-color: #FFFFFF; padding-top: 40px; padding-bottom: 40px;">
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5">
+            <!--Form to check data in PHP Query-->
+            <form method="POST" action="login.php?submitted">  
+            
+                <h3 class="form-login text-center">Login</h3>
+                    <p class="form-text text-center">Login to your account for FLOW Web Store.</p>
+                <!--Username Entry-->
+                <div class="form-outline mb-4 justify-content-left align-items-left">
+                    <label class="form-label"  for="typeUsernameX-2">Email*</label>
+                    <input type="text" name="username" id="typeUsernameX-2" class="form-control form-control-lg" required />
+                </div>
+                <!--Password Entry-->
+                <div class="form-outline mb-4 justify-content-left align-items-left">
+                    <label class="form-label" for="typePasswordX-2">Password*</label>
+                    <input type="password" name="password" id="typePasswordX-2" class="form-control form-control-lg" required />
+                </div>
+
+                <!--Submit Button to Login-->
+                <div style="text-align:center">
+                    <button class="btn btn-dark" type="submit" value="Submit">Login</button>
+                </div>
+
+                <hr class="my-4">
+                
+                <!--PHP message displayed if user enters incorrect details-->
+                <div class="d-flex justify-content-center">
+                    <?php echo $result; ?>  
+                </div>
+                <p class="already-account text-center text-muted mt-5 mb-0">Dont have an Account? <a href="registerLogin.html" class="fw-bold text-body"><u>Sign Up here</u></a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<footer class="py-3 " style="background-color: #ffffff; margin-top: 20px">
+    <ul class="nav justify-content-center" style="padding: 20px;">
+            
+        <li class="nav-item">
+            <a href="shop.html" class="nav-link px-2 text-dark">Candles</a>
+        </li>
+        <li class="nav-item">
+            <a href="aboutus.html" class="nav-link px-2 text-dark">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a href="contact.html" class="nav-link px-2 text-dark">Contact Us</a>
+        </li>
+
+    </ul>
+    <ul class="nav justify-content-center pb-3 mb-3">
+      
+        <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        
+        <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted"><i class="fa-brands fa-square-facebook"></i></a>
+        </li>
+        
+        <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted"><i class="fa-brands fa-tiktok"></i></a>
+        </li>
+    </ul>
+</footer> 
+    
+<!--Google Fonts-->
+<!--Title Text Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+      
+<!--Navigation & Footer-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+      
+<!--Paragraph Text Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        
+      
+    
+
+    
+
+</body>
+</html>

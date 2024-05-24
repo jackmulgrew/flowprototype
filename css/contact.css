@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+.bg-img{
+    height: 50vh;
+    min-height: 300px;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.7);
+}
+
+
+
+.navbar a{
+    font-size: 20px;
+    font-family: poppins;
+
+}
+
+.jumbotron{
+    background-image: url("../img/image14.jpg");
+    background-size: cover;
+    background-position: center ;
+    border-radius: 0 !important;
+}
+
+.img-resize {
+    height: 500px;
+    width: 350px;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    margin: auto;
+}
+
+.img-blocks {
+    height: 500px;
+    width: 750px;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    margin: auto;
+}
+
+.col-6 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.col-4 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.col-3 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/*--Contact Us Title--*/
+#contact-us{
+    font-family: 'Jost', sans-serif;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 80px;
+    
+} 
+
+/* Style Inputs where input type=text, contact form from W3Schools*/
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical 
+}
+
+/* Style for Submit Button */
+input[type=submit] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hover color when mouse hovers over button */
+input[type=submit]:hover {
+  background-color: #0B0C0D;
+}
+
+
+/*--Style for the Full Name, Email and Subject in Contact Form--*/
+#fullname, #email, #subject, #labelFullname, #labelEmail, #labelSubject{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    
+}
+/*--End of style of Contact Form Headings--*/
+
+/*--Submit Button Style--*/
+.submitButton{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+/*--End of Submit Button Styles--*/
+
+.list-styles{
+    font-family: 'Roboto', sans-serif;
+}
+
+  
+ .contact {
+  background-color: rgb(255, 255, 255);
+  padding: 100px;
+  border-color: black;
+  
+  -webkit-box-shadow: 7px 9px 13px -6px rgba(0,0,0,0.43);
+-moz-box-shadow: 7px 9px 13px -6px rgba(0,0,0,0.43);
+box-shadow: 7px 9px 13px -6px rgba(0,0,0,0.43);
+border-radius: 18px;
+ }
+
+
+.contact p {
+  color: rgb(0, 0, 0);
+  font-family: poppins;
+  font-size: 20px;
+}
+
+ .contact label {
+  font-family: poppins;
+  color: rgb(0, 0, 0);
+ }
+
+ .contactinfo {
+  margin-top:50px;
+  margin-bottom:50px;
+ }
+
+
+ button {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  button:hover span {
+    transform: translateX(5em);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+  
+  h1 {
+    font-family: poppins;
+  }
